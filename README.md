@@ -1,0 +1,2 @@
+# MyPromise
+MyPromise test
