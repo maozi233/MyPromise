@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+  const { MyPromise } = window.__promise__;
+  // console.log('server 123', window.__promise__)
+  // const p1 = new MyPromise((resolve, reject) => {resolve('成功1')})
+  // const p1 = new MyPromise((resolve, reject) => {})
+  // const p1 = new MyPromise((resolve, reject) => resolve())
+  // const p1 = new MyPromise((resolve, reject) => reject())
+  const p1 = new MyPromise((resolve, reject) => { throw new Error('error') })
+  console.log(p1)
+</script>
+</html>
